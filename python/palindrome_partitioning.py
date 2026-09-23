@@ -3,7 +3,7 @@
 # Language: python
 # Link: https://leetcode.com/problems/palindrome-partitioning/
 # Synced by: LinkCode
-# Date: 9/24/2026, 3:16:14 AM
+# Date: 9/24/2026, 3:17:11 AM
 # ======================================
 
 
@@ -15,9 +15,9 @@ class Solution(object):
                 result.append(current[:])
                 return
             for end in range(start, len(s)):
-                substring = s[start:end+1]
-                if substring == substring[::-1]:
-                    current.append(substring)
+                subs = s[start:end+1]
+                if subs == subs[::-1]:
+                    current.append(subs)
                     backtrack(end+1, current)
                     current.pop()
         backtrack(0, [])
