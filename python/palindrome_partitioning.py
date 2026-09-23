@@ -3,7 +3,7 @@
 # Language: python
 # Link: https://leetcode.com/problems/palindrome-partitioning/
 # Synced by: LinkCode
-# Date: 9/24/2026, 3:17:11 AM
+# Date: 9/24/2026, 3:17:17 AM
 # ======================================
 
 
