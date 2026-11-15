@@ -3,22 +3,20 @@
 # Language: python
 # Link: https://leetcode.com/problems/longest-consecutive-sequence/
 # Synced by: LinkCode
-# Date: 11/15/2026, 12:15:36 AM
+# Date: 11/15/2026, 1:24:52 PM
 # ======================================
 
 
 class Solution(object):
     def longestConsecutive(self, nums):
-        count=1
-        max_count =1
-        nums_set = sorted(set(nums))
-        if not nums_set:
-            return 0
-        for i in range(len(nums_set)-1):
-            nums_next= nums_set[i]+1
-            if nums_set[i+1] == nums_next:
-                count+=1
-            else:
-                count=1
-            max_count = max(count, max_count)
+        max_count =0
+        nums_set = set(nums)
+        for num in nums_set:
+            if num - 1 not in nums_set:
+                count = 1
+                current = num
+                while current+1 in nums_set:
+                    current+=1
+                    count+=1
+                max_count = max(max_count, count)
         return max_count
