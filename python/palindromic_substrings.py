@@ -3,7 +3,7 @@
 # Language: python3
 # Link: https://leetcode.com/problems/palindromic-substrings/
 # Synced by: LinkCode
-# Date: 11/23/2026, 11:03:18 PM
+# Date: 11/23/2026, 11:05:11 PM
 # ======================================
 
 
